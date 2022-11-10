@@ -1,4 +1,4 @@
-# Scrape FOMC Statements and Minutes
+# Collect FOMC Statements
 
 * Reference
     - Scraping: https://github.com/tengtengtengteng/Webscraping-FOMC-Statements
