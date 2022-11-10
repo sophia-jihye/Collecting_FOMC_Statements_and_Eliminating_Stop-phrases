@@ -23,7 +23,7 @@ start_mmddyyyy = args.start_mmddyyyy
 end_mmddyyyy = args.end_mmddyyyy
 
 selenium_filepath = "C:\GIT\SELENIUM_DRIVERS\chromedriver_win32\chromedriver.exe"
-clustering_model_filepath = "clustering_model.pkl"
+noise_detection_model_filepath = "noise_detection_model.pkl"
 save_root_dir = './Statements'
 
 url = "https://www.federalreserve.gov/monetarypolicy/materials/"
@@ -91,13 +91,13 @@ def get_text_for_a_statement_from_1996_to_2005(soup):
 def get_text_for_a_statement_from_1994_to_1995(soup):
     return soup.find('div', id="content").text.strip()
 
-def prepare_resources_for_cleaning(clustering_model_filepath):
+def prepare_resources_for_cleaning(noise_detection_model_filepath):
     nlp_features = pipeline('feature-extraction', model="nlpaueb/sec-bert-base")
     
-    with open(clustering_model_filepath, "rb") as f:
-        clustering_model = pickle.load(f)
+    with open(noise_detection_model_filepath, "rb") as f:
+        noise_detection_model = pickle.load(f)
         
-    return nlp_features, clustering_model
+    return nlp_features, noise_detection_model
 
 def extract_sentences(doc):
     sentences = []
@@ -113,7 +113,7 @@ if __name__ == '__main__':
     
     driver, pagination, largest_page = prepare_resources_for_scraping(selenium_filepath)
     statement_url_list = scrape_URLs(driver, pagination, largest_page)
-    nlp_features, clustering_model = prepare_resources_for_cleaning(clustering_model_filepath)
+    nlp_features, noise_detection_model = prepare_resources_for_cleaning(noise_detection_model_filepath)
         
     doc_count = 0
     for statement_url in tqdm(statement_url_list):
@@ -141,7 +141,7 @@ if __name__ == '__main__':
         one_doc_sentences_df['feature'] = one_doc_sentences_df['sentence'].progress_apply(lambda x: get_feature(x))
         
         arr = np.vstack(one_doc_sentences_df['feature'].values)
-        labels = clustering_model.predict(arr)
+        labels = noise_detection_model.predict(arr)
         one_doc_sentences_df['cluster_index'] = labels
         
         for cluster_index in [3, 4, 5, 9, 12, 13, 20, 26, 28]:
