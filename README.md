@@ -15,7 +15,7 @@ python main_scrape_ane_clean_statements.py --start_mmddyyyy "09/01/2022" --end_m
     - Phrases 수: 3,372개
 * Cluster 수: 50
 
-* Full list of Noisy clusters
+* Full list of noisy clusters
 
 |     Cluster index    |     Example sentence                                 |
 |----------------------|------------------------------------------------------|
