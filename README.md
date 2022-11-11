@@ -9,6 +9,13 @@
 python main_scrape_ane_clean_statements.py --start_mmddyyyy "09/01/2022" --end_mmddyyyy "11/09/2022"
 ```
 
+### Cleaning
+![results](./results.png)
+
+### Overview
+![flow1](./flow1.png)
+![flow2](./flow2.png)
+
 ### Noise detection model 
 * 학습 데이터: 1990-01-01 ~ 2022-08-01 
     - 문서 수: 213개
@@ -28,3 +35,4 @@ python main_scrape_ane_clean_statements.py --start_mmddyyyy "09/01/2022" --end_m
 |     20               |     For   immediate release                          |
 |     26               |     Implementation   Note issued January 27, 2016    |
 |     28               |     Release   Date: February 4, 1994                 |
+
