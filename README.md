@@ -6,7 +6,7 @@
 
 ### Scrape, clean, and save statements
 ```
-python main_scrape_ane_clean_statements.py --start_mmddyyyy "09/01/2022" --end_mmddyyyy "11/09/2022"
+python main_scrape_and_clean_statements.py --start_mmddyyyy "09/01/2022" --end_mmddyyyy "11/09/2022"
 ```
 
 ### Cleaning
