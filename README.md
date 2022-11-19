@@ -13,8 +13,7 @@ python main_scrape_and_remove_stop_phrases.py --start_mmddyyyy "09/01/2022" --en
 ```
 
 ### Stop-phrases
-| Regular
-  expression                                             | Stop-phrase example                                                                                                                                               |
+| Regular expression                                             | Stop-phrase example                                                                                                                                               |
 | :--------------------------------------------------------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `re.compile('Release Date: [A-z][a-z]{2,8} \d{1,2}, \d{4}')` | Release Date: February 4, 1994 |
 | `re.compile('For immediate release')`                          | For immediate release  |
