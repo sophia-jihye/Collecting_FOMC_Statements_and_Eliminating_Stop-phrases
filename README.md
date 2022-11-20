@@ -60,7 +60,7 @@ MEETING_DATE: November 1-2, 2022
 Recent...and Christopher J. Waller. 
 ```
 
-## Full list of stop-phrases patterns
+## Full list of stop-phrase patterns
 | Regular expression                                             | Stop-phrase example                                                                                                                                               |
 | :--------------------------------------------------------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `Release Date: [A-z][a-z]{2,8} \d{1,2}, \d{4}` | Release Date: February 4, 1994 |
