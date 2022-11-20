@@ -108,7 +108,8 @@ stop_phrase_patterns = [re.compile('Release Date: [A-z][a-z]{2,8} \d{1,2}, \d{4}
                        , re.compile('\(\d{1,3} KB PDF\)')]
 def remove_stop_phrases(document):
     for stop_phrase_pattern in stop_phrase_patterns:
-        document = stop_phrase_pattern.sub(' ', document).strip()
+        document = stop_phrase_pattern.sub(' ', document)
+        document = remove_doublespaces(document)
     return document
 
 if __name__ == '__main__':
