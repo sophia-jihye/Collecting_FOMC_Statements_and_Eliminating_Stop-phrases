@@ -96,7 +96,7 @@ def get_text_for_a_statement_from_1994_to_1995(soup):
 
 doublespace_pattern = re.compile('\s+')
 def remove_doublespaces(document):
-    return doublespace_pattern.sub(' ', document)
+    return doublespace_pattern.sub(' ', document).strip()
 
 stop_phrase_patterns = [re.compile('Release Date: [A-z][a-z]{2,8} \d{1,2}, \d{4}')\
                        , re.compile('For immediate release')\
