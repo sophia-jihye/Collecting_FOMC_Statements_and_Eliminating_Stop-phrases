@@ -21,7 +21,7 @@ python main_scrape_and_remove_stop_phrases.py --start_mmddyyyy "09/01/2022" --en
 | save\_root\_dir    | str  | "./Statements"                                                      |
 
 ### Output 
-* meeting_date, document_date, 
+* One text file contains information regarding a meeting date, document date, and document.
 * The following shows the directory structure where the scraped and processed documents are stored.
 ```
 ├── main_scrape_and_remove_stop_phrases.py
