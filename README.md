@@ -65,7 +65,7 @@ Recent...and Christopher J. Waller.
 | :--------------------------------------------------------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `Release Date: [A-z][a-z]{2,8} \d{1,2}, \d{4}` | Release Date: February 4, 1994 |
 | `For immediate release`                          | For immediate release  |
-| `Home \|.*`                                     | Home | Press releases Accessibility | Contact Us Last update: April 20, 2007, Home | News and events Accessibility Last update: December 11, 2001          |
+| `Home \|.*`                                     | `Home | Press releases Accessibility | Contact Us Last update: April 20, 2007, Home | News and events Accessibility Last update: December 11, 2001`          |
 | `\d{4} Monetary policy`                         | 2005 Monetary policy |
 | `Implementation Note issued.*`                  | Implementation Note issued January 27, 2016 |
 | `Frequently Asked Questions.*`                  | Frequently Asked Questions for…<br>[Refer to <a href="https://www.federalreserve.gov/newsevents/pressreleases/monetary20191011a.htm">this page</a>] |
