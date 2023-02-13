@@ -12,6 +12,8 @@
 python main_scrape_and_remove_stop_phrases.py --start_mmddyyyy "09/01/2022" --end_mmddyyyy "11/09/2022"
 ```
 
+![overview](./assets/overview.png)
+
 ### Input
 | Variable           | Type | Example                                                             |
 | :----------------- | :--- | :------------------------------------------------------------------ |
