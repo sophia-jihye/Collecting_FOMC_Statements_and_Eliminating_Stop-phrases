@@ -47,7 +47,7 @@ Recent...and Christopher J. Waller.
 
 ## Meeting date parsing
 
-* extract_begin_end_dates() 함수 자체 개발
-    - Input: 여러 가지 형식의 date range (Data type: string)
-    - Output: meetingdate_start, meetingdate_end (Data type: datetime)
+* Customized function: extract_begin_end_dates() 
+    - Input: `date range (Data type: string)` in various formats
+    - Output: `meetingdate_start (Data type: datetime)`, `meetingdate_end (Data type: datetime)` 
 ![meeting_date_parsing](./assets/meeting_date_parsing.png)
